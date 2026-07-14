@@ -2937,3 +2937,43 @@ body:has(.section-3.active) .header {
         bottom: 1.5vh !important;
     }
 }
+
+/* =========================================================================
+   [섹션 7 추가] 1800-8907 각 숫자 위 '파크공칠' 1:1 매칭
+========================================================================= */
+.s7-phone {
+    display: inline-flex;
+    align-items: flex-end; /* 1800- 과 8907의 하단 라인을 완벽하게 맞춤 */
+    justify-content: center;
+}
+
+.s7-prefix {
+    line-height: 1;
+    margin-right: 5px; /* '1800-'과 '8907' 묶음 사이의 여백 */
+}
+
+/* 숫자와 위 글자를 위아래로 묶는 박스 */
+.s7-char-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center; /* 세로로 글자와 숫자를 정중앙 정렬 */
+    justify-content: flex-end;
+    margin: 0 -1px; /* 8, 9, 0, 7 숫자 사이 간격 미세 조정 */
+}
+
+/* 상단 '파크공칠' 글자 디자인 */
+.s7-char {
+    font-family: var(--font-main);
+    font-size: 0.28em;
+    font-weight: 900;           /* 기존 800에서 900으로 변경하여 최대한 굵게 */
+    color: var(--main-green);   /* 빨간색에서 하단 번호와 어울리는 메인 초록색으로 변경 */
+    line-height: 1;
+    margin-bottom: 5px;
+    letter-spacing: 0;
+}
+
+/* 하단 큰 8907 숫자 */
+.s7-num {
+    line-height: 1;
+    letter-spacing: 0;      /* 개별 박스 중앙 정렬을 위해 자간 초기화 */
+}
