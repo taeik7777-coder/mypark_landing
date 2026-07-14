@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>마이파크 - 스크린골프장 업종전환</title>
+
+    <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
+    <link rel="stylesheet" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/MYPARK_black.png" type="image/png">
+</head>
+
+<body>
+
+    <header class="header" id="mainHeader">
+        <img src="img/MYPARK_black.png" alt="마이파크 로고" id="logo"
+            onerror="this.onerror=null; this.src='https://dummyimage.com/400x120/F4F4F4/000000.png&text=MYPARK'">
+    </header>
+
+    <div id="fullpage-wrapper">
+
+        <!-- [섹션 1] 메인 인트로 -->
+        <section class="section section-1" data-theme="light">
+            <div class="s1-content-wrapper">
+
+                <div class="s1-text-group fade-up delay-1">
+                    <h1 class="s1-title">요즘 스크린 골프장<br>많이 힘드시죠?</h1>
+                    <p class="s1-desc">
+                        끝없는 출혈 경쟁과 만만치 않은 철거, 원복 비용...<br>
+                        <strong class="text-black"
+                            style="font-weight: 900; font-size: 1.15em; background: linear-gradient(to top, var(--pop-yellow) 40%, transparent 40%); padding: 0 4px;">마이파크</strong>가
+                        기존 장비 최고가 매입 후<br>
+                        <strong class="text-black"
+                            style="font-weight: 900; font-size: 1.15em; background: linear-gradient(to top, var(--pop-yellow) 40%, transparent 40%); padding: 0 4px;">스크린
+                            파크골프</strong>로의 업종 전환을 <br class="m-br">도와드립니다 !
+                    </p>
+                    <button class="s1-btn js-move-section" data-target="1">자세히 알아보기</button>
+                </div>
+
+                <div class="s1-price-group fade-up delay-2">
+                    <div class="s1-price-flex">
+                        <p class="s1-price-label-left">기존 장비당 최대</p>
+
+                        <div class="s1-price-number-col">
+                            <div class="s1-price-number-wrapper">
+                                <div class="s1-eight-box">
+                                    <span class="spark s-1"></span>
+                                    <span class="spark s-2"></span>
+                                    <span class="spark s-3"></span>
+                                    <span class="t-eight">800</span>
+                                </div>
+                                <span class="t-manwon">만원</span>
+                            </div>
+                            <span class="s1-price-label-bottom">최고가 매입 !</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="scroll-arrow js-move-section" data-target="1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </section>
+
+        <!-- [섹션 2] 고통 vs 환희 스플릿 뷰 -->
+        <section class="section split-section" id="splitSection" data-theme="dark">
+            <div class="split-left js-split-panel" data-side="left">
+                <div class="split-main left-main">
+                    <div class="person-wrapper despair-wrapper">
+                        <div class="lightning-container">
+                            <img src="img/lightning.png" alt="번개 1" class="bolt bolt-1"
+                                onerror="this.src='https://dummyimage.com/100x100/FFD400/000.png&text=⚡'">
+                            <img src="img/lightning.png" alt="번개 2" class="bolt bolt-2"
+                                onerror="this.src='https://dummyimage.com/100x100/FFD400/000.png&text=⚡'">
+                            <img src="img/lightning.png" alt="번개 3" class="bolt bolt-3"
+                                onerror="this.src='https://dummyimage.com/100x100/FFD400/000.png&text=⚡'">
+                        </div>
+                        <img src="img/despairman.png" alt="고민하는 점주" class="person-img"
+                            onerror="this.src='https://dummyimage.com/500x700/000000/ffffff.png&text=despairman'">
+                    </div>
+                    <div class="text-box left-text-box">
+                        <h2 class="split-h2 text-white">스크린 골프장 운영,<br><span class="c-red">버티자니 적자고 닫자니 빚이신가요?</span>
+                        </h2>
+                        <p class="split-p text-white mt-20">
+                            치솟는 고정비와 끝없는 출혈경쟁에 매달 적자는 쌓여만 가고,<br class="pc-br">
+                            차라리 폐업하려 해도 <strong class="c-red">수천만 원에 달하는 철거비와 매장 원복비</strong>가<br class="pc-br">
+                            턱없이 부담스러워 이러지도 저러지도 못하는 답답한 현실.<br class="pc-br">
+                            점주님의 그 깊은 고민과 망설임, 마이파크가 덜어드리겠습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="split-trigger left-trigger">
+                    <div class="trigger-inner">
+                        <img src="img/MYPARK_white.png" alt="마이파크 로고" class="trigger-logo"
+                            onerror="this.src='https://dummyimage.com/200x60/000000/ffffff.png&text=MYPARK'">
+                        <div class="trigger-txt-wrap text-white">
+                            <span class="t-arrow">◀</span>
+                            <div class="t-text">마이파크를<br>선택하지 않으면</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-right js-split-panel" data-side="right">
+                <div class="split-trigger right-trigger">
+                    <div class="trigger-inner">
+                        <img src="img/MYPARK_black.png" alt="마이파크 로고" class="trigger-logo"
+                            onerror="this.src='https://dummyimage.com/200x60/ffffff/000000.png&text=MYPARK'">
+                        <div class="trigger-txt-wrap text-black text-right">
+                            <div class="t-text">마이파크를<br>선택하면</div>
+                            <span class="t-arrow">▶</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="split-main right-main">
+                    <div id="money-container" class="money-container"></div>
+                    <div class="text-box right-text-box">
+                        <h2 class="split-h2 text-black">마이파크로 업종 전환,<br><span class="c-green">가장 확실한 새 출발!</span></h2>
+                        <p class="split-p text-black mt-20">
+                            막막했던 <strong>철거비 걱정은 0원! 기존 장비는 최고가로 매입</strong>하여<br class="pc-br">
+                            전환에 필요한 초기 비용 부담을 확 낮춰드립니다.<br class="pc-br">
+                            파크골프 열풍으로 <strong>시니어 고객</strong>들이 매장을 가득 채워,<br class="pc-br">
+                            오전 일찍부터 마감까지 <strong>비는 타석 없는 회전율</strong>이 현실이 됩니다 !
+                        </p>
+                    </div>
+                    <div class="person-wrapper smile-wrapper">
+                        <img src="img/smileman.png" alt="기뻐하는 점주" class="person-img"
+                            onerror="this.src='https://dummyimage.com/500x700/ffffff/000000.png&text=smileman'">
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-arrow split-arrow-right js-move-section" data-target="2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </section>
+
+        <!-- [섹션 3] 철거비용 vs 업종전환 -->
+        <section class="section section-3" data-theme="dark">
+            <div class="s3-part s3-black">
+                <div class="s3-content-wrapper">
+
+                    <div class="s3-text-area fade-up delay-1">
+                        <h2 class="s3-title text-white">철거, 상가 원상복구 비용<br>
+                            <span class="strike-wrap">
+                                수천만원
+                                <span class="strike-line"></span>
+                            </span>
+                            <span class="strike-zero">0원</span>
+                        </h2>
+                        <p class="s3-desc text-white">
+                            갈수록 줄어드는 손님과 쌓여가는 적자...<br>
+                            폐업을 결심해도, 수천만 원에 달하는 철거비와<br>
+                            원상복구 공사비가 또다시 발목을 잡습니다.<br>
+                            폐업조차 빚을 내야 하는 막막한 상황, 이대로 감당하시겠습니까?
+                        </p>
+                    </div>
+
+                    <div class="s3-receipt-area fade-up delay-2">
+                        <div class="receipt-wrapper">
+                            <div class="receipt-box">
+                                <div class="r-title">철거 · 원복 견적</div>
+                                <div class="r-dashed"></div>
+                                <div class="r-items">
+                                    <div class="r-row r-anim r-delay-1"><span class="r-label">매장 원복</span><span
+                                            class="r-val">비용 발생</span></div>
+                                    <div class="r-row r-anim r-delay-2"><span class="r-label">타석 철거</span><span
+                                            class="r-val">비용 발생</span></div>
+                                    <div class="r-row r-anim r-delay-3"><span class="r-label">빔프로젝터 철거</span><span
+                                            class="r-val">비용 발생</span></div>
+                                    <div class="r-row r-anim r-delay-4"><span class="r-label">키오스크 철거</span><span
+                                            class="r-val">비용 발생</span></div>
+                                    <div class="r-dots r-anim r-delay-5">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                                <div class="r-footer r-anim r-delay-6">
+                                    <div class="r-f-title">단순 폐업 시 철거비</div>
+                                    <div class="r-f-line"></div>
+                                    <div class="r-f-val">수천만 원 발생</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="s3-triangle"></div>
+            </div>
+
+            <div class="s3-part s3-green">
+                <div class="s3-content-wrapper">
+
+                    <div class="s3-text-area fade-up delay-7">
+                        <h2 class="s3-title text-white">업종 전환의 골든타임,<br class="pc-br"><br class="m-br">
+                            <span class="s3-title-large">기존 장비당 최대 <span class="c-pop">800만원</span></span><br
+                                class="t-br">
+                            <span class="s3-title-large">최고가 매입 및 <span class="c-pop">할부 구매 가능 !</span></span>
+                        </h2>
+                        <p class="s3-desc text-white">
+                            기존 타석 인테리어는 버릴 필요 없이 최대한 살려두세요.<br class="pc-br">
+                            마이파크로 전환 시, 기존 스크린 장비를 800만원에 매입하고<br class="pc-br">
+                            전환에 필요한 비용은 할부로 점주님의 부담을 최대한 줄여드립니다.
+                        </p>
+                    </div>
+
+                    <div class="s3-receipt-area fade-up delay-8">
+                        <div class="receipt-wrapper">
+                            <div class="receipt-box">
+                                <div class="r-title">업종 전환 견적</div>
+                                <div class="r-dashed"></div>
+                                <div class="r-items">
+                                    <div class="r-row r-anim r-delay-9"><span class="r-label">매장 유지</span><span
+                                            class="r-val">0원</span></div>
+                                    <div class="r-row r-anim r-delay-10"><span class="r-label">타석 사용</span><span
+                                            class="r-val">0원</span></div>
+                                    <div class="r-row r-anim r-delay-11"><span class="r-label">기존 장비 매입</span><span
+                                            class="r-val c-red">대당 최대 800만원</span></div>
+                                     <div class="r-row r-anim r-delay-11"><span class="r-label">마이파크 전환 비용</span>
+                                        <span
+                                            class="r-val c-red">할부 구매 가능 !</span></div>   
+                                    <div class="r-dots r-anim r-delay-12">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                                <div class="r-footer r-anim r-delay-13">
+                                    <div class="r-f-title">마이파크로 업종 전환 시</div>
+                                    <div class="r-f-line"></div>
+                                    <div class="r-f-val c-red">0원</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="scroll-arrow js-move-section" data-target="3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- [섹션 4] 폭발적인 성장의 파크골프 -->
+        <section class="section section-4" data-theme="light">
+            <div class="s4-content-wrapper">
+
+                <div class="s4-header fade-up delay-1">
+                    <h2 class="s4-title">폭발적인 수요, 턱없이 부족한 공급</h2>
+                    <p class="s4-desc">파크골프 시장의 기하급수적인 성장이 점주님의 확실한 수익으로 연결됩니다.</p>
+                </div>
+
+                <div class="s4-body">
+
+                    <div class="s4-left fade-up delay-2">
+                        <h3 class="s4-chart-title">파크골프 협회 회원 수</h3>
+                        <div class="s4-chart-container">
+                            <div class="s4-y-axis">
+                                <span>25만명</span>
+                                <span>20만명</span>
+                                <span>15만명</span>
+                                <span>10만명</span>
+                                <span>5만명</span>
+                                <span>0</span>
+                            </div>
+                            <div class="s4-chart-area">
+                                <div class="s4-grid-lines">
+                                    <div class="s4-grid-line"></div>
+                                    <div class="s4-grid-line"></div>
+                                    <div class="s4-grid-line"></div>
+                                    <div class="s4-grid-line"></div>
+                                    <div class="s4-grid-line"></div>
+                                    <div class="s4-grid-line solid"></div>
+                                </div>
+                                <div class="s4-bars">
+                                    <div class="s4-bar-col">
+                                        <div class="s4-bar b1"></div><span class="s4-x-label">2020</span>
+                                    </div>
+                                    <div class="s4-bar-col">
+                                        <div class="s4-bar b2"></div><span class="s4-x-label">2021</span>
+                                    </div>
+                                    <div class="s4-bar-col">
+                                        <div class="s4-bar b3"></div><span class="s4-x-label">2022</span>
+                                    </div>
+                                    <div class="s4-bar-col">
+                                        <div class="s4-bar b4"></div><span class="s4-x-label">2023</span>
+                                    </div>
+                                    <div class="s4-bar-col">
+                                        <div class="s4-bar b5"></div><span class="s4-x-label">2024</span>
+                                    </div>
+                                    <div class="s4-bar-col">
+                                        <div class="s4-bar b6"></div><span class="s4-x-label">2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="s4-right">
+                        <div class="s4-stats">
+
+                            <div class="s4-stat fade-up delay-3">
+                                <div class="s4-stat-title">파크골프 협회 회원수</div>
+                                <div class="s4-stat-icon">
+                                    <img src="img/people.png" alt="회원수 아이콘"
+                                        onerror="this.src='https://dummyimage.com/100x100/ddd/000.png&text=people'">
+                                </div>
+                                <div class="s4-stat-val">
+                                    <span class="c-green js-count" data-target="455.6">0.0</span><span
+                                        class="c-green">%</span> <span class="t-black">증가</span>
+                                </div>
+                            </div>
+
+                            <div class="s4-stat fade-up delay-4">
+                                <div class="s4-stat-title">파크골프장 수</div>
+                                <div class="s4-stat-icon">
+                                    <img src="img/golf.png" alt="골프장 아이콘" style="transform: scale(1.3);"
+                                        onerror="this.src='https://dummyimage.com/100x100/ddd/000.png&text=golf'">
+                                </div>
+                                <div class="s4-stat-val">
+                                    <span class="c-green js-count" data-target="83.4">0.0</span><span
+                                        class="c-green">%</span> <span class="t-black">증가</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="s4-desc-bottom fade-up delay-5">
+                            <p>
+                                파크골프는 이미 일시적인 유행을 넘어 대한민국 시니어 세대의 <br class="pc-br">
+                                <strong>가장 확실한 주류 레저</strong>로 자리 잡았습니다.
+                            </p>
+                            <p style="margin-top: 10px;">
+                                회원 수는 450% 이상 폭증하고 있지만, 이들을 모두 수용할 <br class="pc-br">
+                                야외 파크골프장은 여전히 <strong>턱없이 부족합니다.</strong>
+                            </p>
+                            <p style="margin-top: 10px;">
+                                결국 수많은 파크골프 인구는 <strong>날씨와 계절에 상관없이 쾌적하게 <br class="pc-br">
+                                    즐길 수 있는 '스크린 파크골프장'</strong>으로 몰려들 수밖에 없습니다.
+                            </p>
+                            <p style="margin-top: 10px;">
+                                레드오션이 된 기존 스크린 골프를 떠나, <br class="pc-br">
+                                경쟁자 없는 블루오션을 선점할 수 있는 지금이 <br class="pc-br">
+                                <strong>업종 전환의 완벽한 골든타임</strong>입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="scroll-arrow js-move-section" data-target="4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </section>
+
+        <!-- [섹션 5] 텅 빈 매장? 낮 시간 회전율 100% 해결 -->
+        <section class="section morning-bg section-5" data-theme="light">
+            <div class="sun-glow"></div>
+
+            <div class="s5-content-wrapper text-center fade-up rel-z2">
+                <h2 class="s5-title text-black">텅 빈 오전 타석?<br><span class="c-green">마이파크는 아침부터<br class="m-br"> 100%
+                        풀가동!</span></h2>
+                <p class="s5-desc mt-20">
+                    퇴근 시간만 목빠지게 기다리는 <br class="m-br">반쪽짜리 영업은 이제 그만하세요.<br>
+                    은퇴 후 시간 여유가 많은 <strong>시니어 고객과 가족 단위 손님</strong>들이<br>
+                    오전 일찍부터 매장을 가득 채워,<br> <strong>비수기 없는 압도적인 회전율</strong>을 완성합니다.
+                </p>
+            </div>
+
+            <div class="marquee-wrapper mt-40 delay-1 fade-up">
+                <div class="marquee-row">
+                    <div class="marquee-track left">
+                        <div class="marquee-group">
+                            <img src="img/shop/shop11.jpg" alt="매장 현장 11"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+11'">
+                            <img src="img/shop/shop3.jpg" alt="매장 현장 3"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+3'">
+                            <img src="img/shop/shop14.jpg" alt="매장 현장 14"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+14'">
+                            <img src="img/shop/shop8.jpg" alt="매장 현장 8"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+8'">
+                            <img src="img/shop/shop1.jpg" alt="매장 현장 1"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+1'">
+                            <img src="img/shop/shop9.jpg" alt="매장 현장 9"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+9'">
+                            <img src="img/shop/shop12.jpg" alt="매장 현장 12"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+12'">
+                            <img src="img/shop/shop5.jpg" alt="매장 현장 5"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+5'">
+                            <img src="img/shop/shop15.jpg" alt="매장 현장 15"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+15'">
+                            <img src="img/shop/shop2.jpg" alt="매장 현장 2"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+2'">
+                            <img src="img/shop/shop10.jpg" alt="매장 현장 10"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+10'">
+                            <img src="img/shop/shop6.jpg" alt="매장 현장 6"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+6'">
+                            <img src="img/shop/shop13.jpg" alt="매장 현장 13"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+13'">
+                            <img src="img/shop/shop4.jpg" alt="매장 현장 4"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+4'">
+                            <img src="img/shop/shop7.jpg" alt="매장 현장 7"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+7'">
+                        </div>
+                        <div class="marquee-group">
+                            <img src="img/shop/shop11.jpg" alt="매장 현장 11"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+11'">
+                            <img src="img/shop/shop3.jpg" alt="매장 현장 3"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+3'">
+                            <img src="img/shop/shop14.jpg" alt="매장 현장 14"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+14'">
+                            <img src="img/shop/shop8.jpg" alt="매장 현장 8"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+8'">
+                            <img src="img/shop/shop1.jpg" alt="매장 현장 1"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+1'">
+                            <img src="img/shop/shop9.jpg" alt="매장 현장 9"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+9'">
+                            <img src="img/shop/shop12.jpg" alt="매장 현장 12"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+12'">
+                            <img src="img/shop/shop5.jpg" alt="매장 현장 5"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+5'">
+                            <img src="img/shop/shop15.jpg" alt="매장 현장 15"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+15'">
+                            <img src="img/shop/shop2.jpg" alt="매장 현장 2"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+2'">
+                            <img src="img/shop/shop10.jpg" alt="매장 현장 10"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+10'">
+                            <img src="img/shop/shop6.jpg" alt="매장 현장 6"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+6'">
+                            <img src="img/shop/shop13.jpg" alt="매장 현장 13"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+13'">
+                            <img src="img/shop/shop4.jpg" alt="매장 현장 4"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+4'">
+                            <img src="img/shop/shop7.jpg" alt="매장 현장 7"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+7'">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marquee-row mt-20">
+                    <div class="marquee-track right">
+                        <div class="marquee-group">
+                            <img src="img/shop/shop7.jpg" alt="매장 현장 7"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+7'">
+                            <img src="img/shop/shop10.jpg" alt="매장 현장 10"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+10'">
+                            <img src="img/shop/shop2.jpg" alt="매장 현장 2"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+2'">
+                            <img src="img/shop/shop15.jpg" alt="매장 현장 15"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+15'">
+                            <img src="img/shop/shop6.jpg" alt="매장 현장 6"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+6'">
+                            <img src="img/shop/shop12.jpg" alt="매장 현장 12"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+12'">
+                            <img src="img/shop/shop4.jpg" alt="매장 현장 4"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+4'">
+                            <img src="img/shop/shop9.jpg" alt="매장 현장 9"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+9'">
+                            <img src="img/shop/shop1.jpg" alt="매장 현장 1"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+1'">
+                            <img src="img/shop/shop13.jpg" alt="매장 현장 13"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+13'">
+                            <img src="img/shop/shop8.jpg" alt="매장 현장 8"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+8'">
+                            <img src="img/shop/shop3.jpg" alt="매장 현장 3"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+3'">
+                            <img src="img/shop/shop14.jpg" alt="매장 현장 14"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+14'">
+                            <img src="img/shop/shop11.jpg" alt="매장 현장 11"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+11'">
+                            <img src="img/shop/shop5.jpg" alt="매장 현장 5"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+5'">
+                        </div>
+                        <div class="marquee-group">
+                            <img src="img/shop/shop7.jpg" alt="매장 현장 7"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+7'">
+                            <img src="img/shop/shop10.jpg" alt="매장 현장 10"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+10'">
+                            <img src="img/shop/shop2.jpg" alt="매장 현장 2"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+2'">
+                            <img src="img/shop/shop15.jpg" alt="매장 현장 15"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+15'">
+                            <img src="img/shop/shop6.jpg" alt="매장 현장 6"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+6'">
+                            <img src="img/shop/shop12.jpg" alt="매장 현장 12"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+12'">
+                            <img src="img/shop/shop4.jpg" alt="매장 현장 4"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+4'">
+                            <img src="img/shop/shop9.jpg" alt="매장 현장 9"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+9'">
+                            <img src="img/shop/shop1.jpg" alt="매장 현장 1"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+1'">
+                            <img src="img/shop/shop13.jpg" alt="매장 현장 13"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+13'">
+                            <img src="img/shop/shop8.jpg" alt="매장 현장 8"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+8'">
+                            <img src="img/shop/shop3.jpg" alt="매장 현장 3"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+3'">
+                            <img src="img/shop/shop14.jpg" alt="매장 현장 14"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+14'">
+                            <img src="img/shop/shop11.jpg" alt="매장 현장 11"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+11'">
+                            <img src="img/shop/shop5.jpg" alt="매장 현장 5"
+                                onerror="this.src='https://dummyimage.com/600x450/EAEAEA/111111.png&text=Shop+5'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-arrow js-move-section" data-target="5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </section>
+
+        <!-- [섹션 6] 100호점 기념 및 매장 안내 -->
+        <section class="section section-6" data-theme="light">
+            <div class="s6-container fade-up">
+
+                <div class="s6-content">
+                    <!-- 좌측: 지도 -->
+                    <div class="s6-left">
+                        <img src="img/map.png" alt="전국 마이파크 설치 현황 지도" class="s6-map">
+                    </div>
+
+                    <!-- 우측: 타이틀, 텍스트, 슬라이더 -->
+                    <div class="s6-right">
+
+                        <!-- 100호점 타이틀 영역 -->
+                        <div class="s6-header text-center rel-z2">
+                            <div class="s6-title-row">
+                                <span class="s6-title-side">최단 기간</span>
+                                <div class="s6-100-wrap">
+                                    <div class="s6-crown-wrap">
+                                        <img src="img/crown.png" alt="왕관" class="s6-crown">
+                                    </div>
+                                    <div class="s6-100-text">100</div>
+                                </div>
+                                <span class="s6-title-side">호점 돌파!</span>
+                            </div>
+                            <h2 class="s6-subtitle text-black" style="word-break: keep-all;">
+                                업계가 주목하는 압도적인 속도,<br>
+                                전국 점주님들이 '마이파크'를 선택한<br class="m-br">데는 분명한 이유가 있습니다.
+                            </h2>
+                        </div>
+
+                        <p class="s6-desc text-black text-center mt-20">
+                            마이파크는 수년간의 자체 기술 개발과 철저한 현장 검증을 통해<br class="pc-br">
+                            완벽한 센서와 쾌적한 플레이 환경을 구축했습니다.<br class="pc-br">
+                            초보자도 단 하루면 운영할 수 있는 직관적인 시스템부터,<br class="pc-br">
+                            실제 파크골프 필드의 타격감을 그대로 구현한 압도적인 기술력까지!<br>
+                            <strong
+                                style="background: linear-gradient(to top, var(--pop-yellow) 40%, transparent 40%); padding: 0 4px;">100호점
+                                돌파</strong>라는 기록은 마이파크의 독보적인 경쟁력을 증명합니다.
+                        </p>
+
+                        <!-- 슬라이더 컨테이너 (JS에서 동적으로 이미지 자동 추가됨) -->
+                        <div class="s6-slider-wrap mt-20">
+                            <div class="s6-slides" id="s6-slider">
+                            </div>
+                        </div>
+
+                        <p class="s6-bottom-desc text-black text-center">
+                            <strong>마이파크 매장은 지금도 늘어갑니다.</strong>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="scroll-arrow js-move-section" data-target="6">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </section>
+
+        <!-- [섹션 7] 상담 및 견적 신청 폼 -->
+        <section class="section section-7 bg-white" data-theme="light">
+            <!-- 배경 원(s7-circle) 제거 완료 -->
+            <div class="s7-content-wrapper fade-up">
+
+                <!-- 좌측: 기존 연락처 정보 -->
+                <div class="s7-info">
+                    <img src="img/mypark_logo2.png" alt="마이파크 로고" class="s7-logo"
+                        onerror="this.src='https://dummyimage.com/400x120/F4F4F4/000000.png&text=MYPARK'">
+                    <h2 class="s7-title">창업·업종전환 상담</h2>
+                    <!-- 모바일에서 클릭 시 전화연결 되도록 a 태그 적용 -->
+                    <a href="tel:1660-4289" class="s7-phone">1800-8907</a>
+                    <p class="s7-desc">마이파크는 항상 점주님들과 함께하겠습니다.<br>궁금하신 점은 언제든 편하게 문의주세요.</p>
+                </div>
+
+                <!-- 우측: DB 수집 입력 폼 -->
+                <div class="s7-form-box">
+                    <h3 class="form-title">무료 상담 신청</h3>
+                    <p class="form-desc">간단한 정보를 남겨주시면 담당자가 빠르게 연락드리겠습니다.</p>
+
+                    <!-- action 부분에 Formspree 주소를 넣으시면 이메일로 발송됩니다 (하단 설명 참고) -->
+                    <form action="https://formspree.io/f/mvzjwgog" method="POST" class="mypark-form">
+
+                        <div class="input-wrap">
+                            <label for="userName">성함<span class="c-red">*</span></label>
+                            <input type="text" id="userName" name="이름" placeholder="성함을 입력해주세요" required>
+                        </div>
+
+                        <div class="input-wrap">
+                            <label for="userPhone">연락처 <span class="c-red">*</span></label>
+                            <input type="tel" id="userPhone" name="연락처" placeholder="'-' 없이 숫자만 입력해주세요" required>
+                        </div>
+
+                        <div class="privacy-wrap">
+                            <label class="privacy-label">개인정보처리방침 및 동의 <span class="c-red">*</span></label>
+                            <div class="privacy-box">
+                                [개인정보 수집 및 이용 안내]<br>
+                                1. 수집 항목 : 성함, 연락처<br>
+                                2. 수집 목적 : 마이파크 창업 및 업종전환 상담, 견적 안내<br>
+                                3. 보유 및 이용 기간 : <strong>상담 완료 후 6개월 이내 파기</strong><br><br>
+                                ※ 귀하는 개인정보 수집에 동의를 거부할 권리가 있으나, 거부 시 원활한 상담 안내가 제한될 수 있습니다.
+                            </div>
+                            <label class="checkbox-wrap">
+                                <input type="checkbox" name="개인정보동의" value="동의함" required>
+                                <span class="agree-text">위 개인정보 수집 및 이용에 동의합니다. (필수)</span>
+                            </label>
+                        </div>
+
+                        <!-- 기존 섹션1의 입체 버튼 디자인 통일성 적용 -->
+                        <button type="submit" class="submit-btn">무료 상담 신청하기</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

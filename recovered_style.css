@@ -1,0 +1,53 @@
+Created At: 2026-07-03T04:33:02Z
+Completed At: 2026-07-03T04:33:14Z
+
+				The command completed successfully.
+				Output:
+				
+> .s1-price-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 55vh;
+      position: relative;
+      right: -10vw;
+  }
+  
+  .s1-price-flex {
+      display: flex;
+>     .s1-price-group {
+          align-self: center;
+          align-items: center;
+          margin-top: 0;
+          width: 100%;
+          right: 0;
+      }
+  
+      .s1-price-flex {
+          flex-direction: row;
+          align-items: center;
+>     .s1-price-group {
+          margin-top: 0;
+          margin-bottom: 8vh;
+          width: 100%;
+          align-items: center;
+      }
+  
+      .s1-price-flex {
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+>     .s1-price-group {
+          margin-top: 5vh;
+      }
+  
+      .person-wrapper {
+          height: 55vh !important;
+      }
+      
+      .left-text-box, .right-text-box {
+          top: 10%;
+      }
+
+
+
