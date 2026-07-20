@@ -284,6 +284,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // 3. 폼 데이터를 구글 스크립트에 맞게 변환
             const formData = new FormData(myForm);
+            
+            // 마케팅 동의 체크 여부 명시적 추가 (체크 안하면 '미동의' 전송)
+            if (!formData.has('마케팅동의')) {
+                formData.append('마케팅동의', '미동의');
+            }
+            
             const urlEncodedData = new URLSearchParams(formData).toString();
 
             // 4. 화면 이동 없이 구글 스프레드시트로 전송
