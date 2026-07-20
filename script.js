@@ -282,34 +282,29 @@ document.addEventListener('DOMContentLoaded', function () {
             submitBtn.style.pointerEvents = 'none';
             submitBtn.style.opacity = '0.7';
 
-            // 3. 폼 데이터를 안전하게 가져오기
+            // 3. 폼 데이터를 구글 스크립트에 맞게 변환
             const formData = new FormData(myForm);
+            const urlEncodedData = new URLSearchParams(formData).toString();
 
-            // 4. 화면 이동 없이 백그라운드에서 폼스프리로 데이터 전송
+            // 4. 화면 이동 없이 구글 스프레드시트로 전송
             fetch(myForm.action, {
                 method: 'POST',
-                body: formData,
+                body: urlEncodedData,
                 headers: {
-                    'Accept': 'application/json'
+                    'Content-Type': 'application/x-www-form-urlencoded'
                 }
             }).then(response => {
-                if (response.ok) {
+                // 구글 스크립트는 성공 시 redirect를 하거나 JSON을 반환함
+                if (response.ok || response.type === 'opaque') {
                     alert('견적 신청이 성공적으로 완료되었습니다!\n담당자가 빠르게 연락드리겠습니다.');
                     myForm.reset(); // 성공 시 폼칸 깔끔하게 초기화
                 } else {
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            const errorMsg = data["errors"].map(error => error["message"]).join(", ");
-                            alert("전송 실패 사유: " + errorMsg);
-                        } else {
-                            alert('신청 중 서버 오류가 발생했습니다. 대표번호로 문의해주세요.');
-                        }
-                    });
+                    alert('신청 중 서버 오류가 발생했습니다. 대표번호(1800-8907)로 문의해주세요.');
                 }
             }).catch(error => {
                 console.error('Fetch 에러:', error);
-                // 모바일 사파리 보안(추적 방지) 기능 등으로 일시적 차단될 경우를 대비한 친절한 안내
-                alert('[전송 지연 안내]\n스마트폰 보안 설정 등으로 통신이 지연되고 있습니다.\n빠른 상담을 위해 1660-4289로 바로 전화 부탁드립니다.');
+                // 브라우저 CORS 정책 등으로 에러가 잡혀도 실제 구글시트에는 기록되는 경우가 많음
+                alert('정상적으로 접수되었거나 통신이 지연되고 있습니다.\n확인을 원하시면 1800-8907로 바로 전화 부탁드립니다.');
             }).finally(() => {
                 // 5. 작업이 끝나면 버튼 원상복구
                 submitBtn.innerText = originalText;
